@@ -527,26 +527,27 @@ p {
 /* line 110, site.css.scss */
 .name h2 {
   margin-top: 20px;
+  margin-left: 15px;
   color: #999; }
 
-/* line 114, site.css.scss */
+/* line 115, site.css.scss */
 .role {
   -webkit-transform: rotate(0);
   position: absolute;
-  top: 495px; }
+  top: 550px; }
 
-/* line 119, site.css.scss */
+/* line 120, site.css.scss */
 .job {
   color: #f00;
-  margin-top: -20px; }
+  margin-top: -10px; }
 
-/* line 123, site.css.scss */
+/* line 124, site.css.scss */
 .co {
   font-size: 80px;
   text-align: center;
   margin-top: 20px; }
 
-/* line 128, site.css.scss */
+/* line 129, site.css.scss */
 .multicols p:first-child:first-letter {
   float: left;
   font-size: 75px;
