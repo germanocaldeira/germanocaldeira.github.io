@@ -406,30 +406,30 @@ textarea {
 
 /* line 4, site.css.scss */
 body {
-  font-size: 13px;
+  font-size: 5vw;
   font-family: 'Helvetica Neue', arial, sans-serif;
   padding: 0;
   margin: 0;
   color: #666;
   line-height: 140%; }
 
-/* line 15, site.css.scss */
+/* line 12, site.css.scss */
 a {
   text-decoration: none;
   color: #666;
   border-bottom: 1px solid #9cf; }
 
-/* line 20, site.css.scss */
+/* line 17, site.css.scss */
 .inner {
-  max-width: 1280px;
+  max-width: 50%;
   padding: 40px;
   margin: 0 auto; }
 
 /* line 25, site.css.scss */
 h1 {
-  font-size: 150px;
+  font-size: 60px;
   line-height: 75%;
-  margin: 0;
+  margin: 5px;
   font-weight: bold; }
 
 /* line 31, site.css.scss */
@@ -460,95 +460,57 @@ p {
   margin: 0; }
 
 /* line 55, site.css.scss */
-.full {
-  margin: 0 -40px;
-  width: 100%; }
-
-/* line 59, site.css.scss */
-.half {
-  width: 50%;
-  float: left; }
-
-/* line 63, site.css.scss */
-.third {
-  width: 33%;
-  float: left; }
-
-/* line 67, site.css.scss */
-.wrap {
-  margin: 0 40px 0 0; }
-
-/* line 70, site.css.scss */
-#home .inner {
-  padding-bottom: 100px; }
-
-/* line 74, site.css.scss */
-.clear {
-  clear: both; }
-
-/* line 78, site.css.scss */
-.multicols {
-  columns: 100px 1;
-  -webkit-columns: 100px 1;
-  /* Safari and Chrome */
-  -moz-columns: 100px 1;
-  /* Firefox */
-  column-fill: auto;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-column-gap: 30px;
-  margin-top: 0px;
+.bio {
+  float: left;
+  width: 40%;
+  margin-top: -35px;
   font-size: 15px;
   font-weight: 300;
   line-height: 140%; }
 
-/* line 91, site.css.scss */
-.col30 {
-  width: 30%;
-  float: right; }
-
-/* line 95, site.css.scss */
+/* line 64, site.css.scss */
 .rotatedtext {
   position: relative;
   width: 60%;
-  height: 800px;
+  height: 1vh;
   -moz-transform: rotate(45deg);
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   float: left; }
 
-/* line 104, site.css.scss */
+/* line 73, site.css.scss */
 .name {
   -webkit-transform: rotate(-90deg);
   position: absolute;
-  left: 90px;
-  top: 30px; }
+  left: 10%;
+  top: 5%; }
 
-/* line 110, site.css.scss */
+/* line 79, site.css.scss */
 .name h2 {
-  margin-top: 20px;
-  margin-left: 15px;
+  margin-top: 10%;
+  margin-left: 5%;
   color: #999; }
 
-/* line 115, site.css.scss */
+/* line 84, site.css.scss */
 .role {
   -webkit-transform: rotate(0);
   position: absolute;
-  top: 550px; }
+  top: 60%;
+  padding-left: 15%; }
 
-/* line 120, site.css.scss */
+/* line 90, site.css.scss */
 .job {
   color: #f00;
-  margin-top: -10px; }
+  margin-top: 125%; }
 
-/* line 124, site.css.scss */
+/* line 94, site.css.scss */
 .co {
-  font-size: 80px;
+  font-size: 50px;
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 10%; }
 
-/* line 129, site.css.scss */
-.multicols p:first-child:first-letter {
+/* line 99, site.css.scss */
+.bio p:first-child:first-letter {
   float: left;
   font-size: 75px;
   line-height: 60px;
