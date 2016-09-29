@@ -696,7 +696,7 @@ p {
 .clear {
   clear: both; }
 
-/* line 65, site.css.scss */
+/* line 66, site.css.scss */
 .rotatedtext {
   position: relative;
   width: 60%;
@@ -706,37 +706,37 @@ p {
   -webkit-transform: rotate(45deg);
   float: left; }
 
-/* line 74, site.css.scss */
+/* line 75, site.css.scss */
 .name {
   -webkit-transform: rotate(-90deg);
   position: absolute;
   left: -60px;
   top: -30px; }
 
-/* line 80, site.css.scss */
+/* line 81, site.css.scss */
 .name h2 {
   margin-top: 20px;
   color: #999; }
 
-/* line 84, site.css.scss */
+/* line 85, site.css.scss */
 .role {
   -webkit-transform: rotate(0);
   position: absolute;
   top: 450px; }
 
-/* line 89, site.css.scss */
+/* line 90, site.css.scss */
 .job {
   color: #f00;
   margin-top: -50px;
   font-size: 100px; }
 
-/* line 94, site.css.scss */
+/* line 95, site.css.scss */
 .co {
   font-size: 80px;
   text-align: center;
   margin-top: 20px; }
 
-/* line 100, site.css.scss */
+/* line 101, site.css.scss */
 .bio {
   float: left;
   margin-top: -100px;
@@ -744,7 +744,7 @@ p {
   font-weight: 300;
   line-height: 140%; }
 
-/* line 109, site.css.scss */
+/* line 110, site.css.scss */
 .bio p:first-child:first-letter {
   float: left;
   font-size: 75px;
