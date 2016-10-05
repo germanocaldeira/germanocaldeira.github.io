@@ -3,7 +3,7 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400);
 /* line 8, _normalize.scss */
 html {
   font-family: sans-serif;
@@ -405,348 +405,118 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-/* line 18, simple-grid.scss */
-html,
+@media screen and (max-width: 480px) {
+  /* line 7, site.css.scss */
+  .logo {
+    width: 70%; } }
+/* line 17, site.css.scss */
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  top: 0;
-  font-size: 100%; }
+  background: #212121; }
 
-/* line 29, simple-grid.scss */
-* {
-  font-family: "Lato", Helvetica, sans-serif;
-  color: #333447;
-  line-height: 1.5; }
-
-/* line 37, simple-grid.scss */
-h1 {
-  font-size: 2.5rem; }
-
-/* line 41, simple-grid.scss */
-h2 {
-  font-size: 2rem; }
-
-/* line 45, simple-grid.scss */
-h3 {
-  font-size: 1.375rem; }
-
-/* line 49, simple-grid.scss */
-h4 {
-  font-size: 1.125rem; }
-
-/* line 53, simple-grid.scss */
-h5 {
-  font-size: 1rem; }
-
-/* line 57, simple-grid.scss */
-h6 {
-  font-size: 0.875rem; }
-
-/* line 61, simple-grid.scss */
-p {
-  font-size: 1.125rem;
-  font-weight: 200;
-  line-height: 1.8; }
-
-/* line 67, simple-grid.scss */
-.font-light {
-  font-weight: 300; }
-
-/* line 71, simple-grid.scss */
-.font-regular {
-  font-weight: 400; }
-
-/* line 75, simple-grid.scss */
-.font-heavy {
-  font-weight: 700; }
-
-/* line 81, simple-grid.scss */
-.left {
-  text-align: left; }
-
-/* line 85, simple-grid.scss */
-.right {
-  text-align: right; }
-
-/* line 89, simple-grid.scss */
-.center {
+@keyframes openTopLine {
+  0% {
+    width: 0;
+    transform: translateY(5em); }
+  50% {
+    width: 27em;
+    transform: translateY(5em); }
+  100% {
+    width: 27em;
+    transform: translateY(0); } }
+@keyframes openBottomLine {
+  0% {
+    width: 0;
+    transform: translateY(-5em); }
+  50% {
+    width: 27em;
+    transform: translateY(-5em); }
+  100% {
+    width: 27em;
+    transform: translateY(0); } }
+@keyframes slideContent {
+  0%, 30% {
+    transform: translateY(50%);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+/* line 62, site.css.scss */
+.logo {
+  font-size: 1.1em;
+  font-family: "Roboto Slab";
   text-align: center;
-  margin-left: auto;
-  margin-right: auto; }
-
-/* line 95, simple-grid.scss */
-.justify {
-  text-align: justify; }
-
-/* line 99, simple-grid.scss */
-.hidden-sm {
-  display: none; }
-
-/* line 111, simple-grid.scss */
-.container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto; }
-  @media only screen and (min-width: 33.75em) {
-    /* line 111, simple-grid.scss */
-    .container {
-      width: 80%; } }
-  @media only screen and (min-width: 60em) {
-    /* line 111, simple-grid.scss */
-    .container {
-      width: 75%;
-      max-width: 60rem; } }
-
-/* line 126, simple-grid.scss */
-.row {
-  position: relative;
-  width: 100%; }
-
-/* line 131, simple-grid.scss */
-.row [class^="col"] {
-  float: left;
-  margin: 0.5rem 2%;
-  min-height: 0.125rem; }
-
-/* line 137, simple-grid.scss */
-.row::after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/* line 143, simple-grid.scss */
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-  width: 96%; }
-
-/* line 158, simple-grid.scss */
-.col-1-sm {
-  width: 4.33333%; }
-
-/* line 159, simple-grid.scss */
-.col-2-sm {
-  width: 12.66667%; }
-
-/* line 160, simple-grid.scss */
-.col-3-sm {
-  width: 21%; }
-
-/* line 161, simple-grid.scss */
-.col-4-sm {
-  width: 29.33333%; }
-
-/* line 162, simple-grid.scss */
-.col-5-sm {
-  width: 37.66667%; }
-
-/* line 163, simple-grid.scss */
-.col-6-sm {
-  width: 46%; }
-
-/* line 164, simple-grid.scss */
-.col-7-sm {
-  width: 54.33333%; }
-
-/* line 165, simple-grid.scss */
-.col-8-sm {
-  width: 62.66667%; }
-
-/* line 166, simple-grid.scss */
-.col-9-sm {
-  width: 71%; }
-
-/* line 167, simple-grid.scss */
-.col-10-sm {
-  width: 79.33333%; }
-
-/* line 168, simple-grid.scss */
-.col-11-sm {
-  width: 87.66667%; }
-
-/* line 169, simple-grid.scss */
-.col-12-sm {
-  width: 96%; }
-
-@media only screen and (min-width: 45em) {
-  /* line 172, simple-grid.scss */
-  .col-1 {
-    width: 4.33333%; }
-
-  /* line 173, simple-grid.scss */
-  .col-2 {
-    width: 12.66667%; }
-
-  /* line 174, simple-grid.scss */
-  .col-3 {
-    width: 21%; }
-
-  /* line 175, simple-grid.scss */
-  .col-4 {
-    width: 29.33333%; }
-
-  /* line 176, simple-grid.scss */
-  .col-5 {
-    width: 37.66667%; }
-
-  /* line 177, simple-grid.scss */
-  .col-6 {
-    width: 46%; }
-
-  /* line 178, simple-grid.scss */
-  .col-7 {
-    width: 54.33333%; }
-
-  /* line 179, simple-grid.scss */
-  .col-8 {
-    width: 62.66667%; }
-
-  /* line 180, simple-grid.scss */
-  .col-9 {
-    width: 71%; }
-
-  /* line 181, simple-grid.scss */
-  .col-10 {
-    width: 79.33333%; }
-
-  /* line 182, simple-grid.scss */
-  .col-11 {
-    width: 87.66667%; }
-
-  /* line 183, simple-grid.scss */
-  .col-12 {
-    width: 96%; }
-
-  /* line 185, simple-grid.scss */
-  .hidden-sm {
-    display: block; } }
-/* line 6, site.css.scss */
-body {
-  font-size: 13px;
-  font-family: 'Helvetica Neue', arial, sans-serif;
-  padding: 0;
-  margin: 0;
-  color: #666;
-  line-height: 140%; }
-
-/* line 15, site.css.scss */
-a {
-  text-decoration: none;
-  color: #666;
-  border-bottom: 1px solid #9cf; }
-
-/* line 20, site.css.scss */
-.inner {
-  max-width: 100%;
-  padding: 40px;
-  margin: auto; }
-
-/* line 26, site.css.scss */
-h1 {
-  font-size: 120px;
-  line-height: 75%;
-  margin: 0;
-  font-weight: bold; }
-
-/* line 32, site.css.scss */
-.rotatedtext h2 {
-  font-size: 36px;
-  clear: both;
-  margin: 0;
-  padding: 0;
-  line-height: 130%; }
-
-/* line 39, site.css.scss */
-.border h2 {
-  padding-bottom: 10px; }
-
-/* line 42, site.css.scss */
-h3 {
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 800px;
-  line-height: 140%;
-  opacity: .8; }
-
-/* line 51, site.css.scss */
-p {
-  padding: 3px 0 10px 0;
-  margin: 0; }
-
-/* line 57, site.css.scss */
-#home .inner {
-  padding-bottom: 100px; }
-
-/* line 61, site.css.scss */
-.clear {
-  clear: both; }
-
-/* line 66, site.css.scss */
-.rotatedtext {
-  position: relative;
-  width: 60%;
-  height: 800px;
-  -moz-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  float: left; }
-
-/* line 75, site.css.scss */
-.name {
-  -webkit-transform: rotate(-90deg);
+  color: #bdbdbd;
   position: absolute;
-  left: -60px;
-  top: -30px; }
-
-/* line 81, site.css.scss */
-.name h2 {
-  margin-top: 20px;
-  color: #999; }
-
-/* line 85, site.css.scss */
-.role {
-  -webkit-transform: rotate(0);
-  position: absolute;
-  top: 450px; }
-
-/* line 90, site.css.scss */
-.job {
-  color: #f00;
-  margin-top: -50px;
-  font-size: 100px; }
-
-/* line 95, site.css.scss */
-.co {
-  font-size: 80px;
-  text-align: center;
-  margin-top: 20px; }
-
-/* line 101, site.css.scss */
-.bio {
-  float: left;
-  margin-top: -100px;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 140%; }
-
-/* line 110, site.css.scss */
-.bio p:first-child:first-letter {
-  float: left;
-  font-size: 75px;
-  line-height: 60px;
-  padding: 4px 8px 0 3px; }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden; }
+  /* line 73, site.css.scss */
+  .logo .line {
+    height: 1px;
+    background: #bdbdbd;
+    display: inline-block;
+    width: 27em; }
+    /* line 79, site.css.scss */
+    .logo .line.topLine {
+      animation: openTopLine 1.5s; }
+    /* line 83, site.css.scss */
+    .logo .line.bottomLine {
+      animation: openBottomLine 1.5s; }
+  /* line 88, site.css.scss */
+  .logo .content {
+    animation: slideContent 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 1.25s; }
+    /* line 93, site.css.scss */
+    .logo .content .vintage {
+      font-weight: 400;
+      font-size: 2em;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 0px #212121, 2px 2px 0px #bdbdbd;
+      letter-spacing: 4px; }
+    /* line 101, site.css.scss */
+    .logo .content .since {
+      font-weight: 100;
+      margin: 0.25em auto 0.5em; }
+    /* line 106, site.css.scss */
+    .logo .content .desc {
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-style: italic; }
+    /* line 113, site.css.scss */
+    .logo .content .skillz {
+      font-size: 1.2em;
+      margin-top: 0.25em;
+      font-weight: 400;
+      letter-spacing: 1px; }
+    /* line 121, site.css.scss */
+    .logo .content .links a {
+      display: inline-block;
+      color: #bdbdbd;
+      font-size: 1.25em;
+      margin: 0.25em 0.2em 0;
+      transition: color 0.1s;
+      cursor: pointer;
+      transition: color 0.15s;
+      animation: slideContent 1s;
+      animation-fill-mode: backwards; }
+      /* line 135, site.css.scss */
+      .logo .content .links a:nth-of-type(1n) {
+        animation-delay: 2s; }
+      /* line 135, site.css.scss */
+      .logo .content .links a:nth-of-type(2n) {
+        animation-delay: 2.25s; }
+      /* line 135, site.css.scss */
+      .logo .content .links a:nth-of-type(3n) {
+        animation-delay: 2.5s; }
+      /* line 135, site.css.scss */
+      .logo .content .links a:nth-of-type(4n) {
+        animation-delay: 2.75s; }
+      /* line 135, site.css.scss */
+      .logo .content .links a:nth-of-type(5n) {
+        animation-delay: 3s; }
+      /* line 142, site.css.scss */
+      .logo .content .links a:hover {
+        color: white; }
